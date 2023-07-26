@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Dokk</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <div class="painel">
+
+        <p id="invalid" onclick="Admin()">LOGIN ON DOKK</p>
+
+        <h1 class="dokktext">DOKK</h1>
+        
+        <p id="emailtext">Email or Username: </p>
+        <input type="email" name="email" id="email">
+        
+        <p id="passwordtext">Password: </p>
+        <input type="password" name="password" id="password">
+        <div id="icon" onclick="ShowPasswordLogin()"></div>
+        
+        <button name="buttonlogin" class="buttonlogin" onclick="login()">ACESSAR</button>
+
+        <a href="register/register.html" class="register">Ainda não é um membro ? Cadastre-se</a>
+
+    </div>
+
+</body>
+</html>

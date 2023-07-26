@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Ip: <input type="text" id="AttackIp">
+    Attack Port: <input type="number" id="AttackPort"><input type="checkbox" id="PortCheck">
+    Attack Type: <input type="text" id="AttackType"><input type="checkbox" id="TypeCheck">
+    Stats: <input type="text" id="Stats">
+    Seconds: <input type="text" id="Seconds"><input type="checkbox" id="SecondsCheck">
+
+    <button onclick="sucess()">Liberar</button>
+
+    <br>
+    <br>
+
+    Marque a caixa a direita do input para ser um valor default!
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table border="10">
+        <tr>
+
+            <td>IP: </td>
+            <td>Attack Port: </td>
+            <td>Attack Type: </td>
+            <td>Stats: </td>
+            <td>Seconds: </td>
+            <td>Bots: </td>
+            <td>Media de Bots/s: </td>
+
+        </tr>
+
+        <tr>
+
+            <td id="tdIp"></td>
+            <td id="tdPort"></td>
+            <td id="tdType"></td>
+            <td id="tdSt"></td>
+            <td id="tdSec"></td>
+            <td>150 </td>
+            <td>48 </td>
+
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <table border="1">
+        <tr>
+
+            <td>METHODS: </td>
+            <td>PAYMENTS: </td>
+            <td>STATS: </td>
+
+        </tr>
+
+        <tr>
+
+            <td>Dokk</td>
+            <td>Ceo / Coo / Dev (Super-Admin)</td>
+            <td>S-Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>UDP-CUSTOM</td>
+            <td>Admin</td>
+            <td>Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>UDP-AMP</td>
+            <td>Admin</td>
+            <td>Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SSDP</td>
+            <td>Admin</td>
+            <td>Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>ARD</td>
+            <td>Admin</td>
+            <td>Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>NTP</td>
+            <td>Admin</td>
+            <td>Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>DNS</td>
+            <td>Admin</td>
+            <td>Private</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-JUNK</td>
+            <td>Painita</td>
+            <td>New</td>
+
+        </tr>
+
+        <tr>
+
+            <td>UDP-CORE</td>
+            <td>Painita</td>
+            <td>New</td>
+
+        </tr>
+
+        <tr>
+
+            <td>AMP</td>
+            <td>Painita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BYPASS</td>
+            <td>Painita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>DATA</td>
+            <td>Painita</td>
+            <td>New</td>
+
+        </tr>
+
+        <tr>
+
+            <td>CUSTOM</td>
+            <td>Painita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SYN</td>
+            <td>Diamante estrela rosa</td>
+
+        </tr>
+
+        <tr>
+
+            <td>ACK</td>
+            <td>Diamante estrela rosa</td>
+
+        </tr>
+
+        <tr>
+
+            <td>REFLECT</td>
+            <td>Diamante estrela rosa</td>
+            <td>New</td>
+
+        </tr>
+
+        <tr>
+
+            <td>DRDOS</td>
+            <td>Musgravita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BROWSER EMULATION</td>
+            <td>Musgravita</td>
+            <td>New</td>
+
+        </tr>
+
+        <tr>
+
+            <td>CLDAP</td>
+            <td>Musgravita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>WSD</td>
+            <td>Musgravita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-IMP</td>
+            <td>Musgravita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-DEVICES</td>
+            <td>Jadeite</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-ECN</td>
+            <td>Jadeite</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-RAW</td>
+            <td>Jadeite</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-HANDSHAKE</td>
+            <td>Jadeite</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-BYPASSV2</td>
+            <td>Jadeite</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-ABUSE</td>
+            <td>Jadeite</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-TFO</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>TCP-TLS</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SOURCE</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SOURCE-LITE</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SOURCE-OVH</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>RAKNET</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>FIVEM</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SAMP</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>ICMP</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>GET</td>
+            <td>Alexandrita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>POST</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>HTTPS</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>OPEN-BSD</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>OPEN</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BSD</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>RPS</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>APACHE</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>PING</td>
+            <td>Berilo Vermelho</td>
+
+        </tr>
+
+        <tr>
+
+            <td>POD</td>
+            <td>Benitoita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>SLOWLORIS</td>
+            <td>Benitoita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>NTP</td>
+            <td>Benitoita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>AMPLIFICATION</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>AMPLIFICATION-NTP</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>HTTP</td>
+            <td>Benitoita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>HTTP-FLOOD</td>
+            <td>Benitoita</td>
+
+        </tr>
+
+        <tr>
+
+            <td>ZDDA</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>ZERO-DAY</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>DDOSA</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>HACK</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>HACKTIVISTS</td>
+            <td>Benitoita</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BSNFEUS</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BUSINESS</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BORMD</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BOREDOM</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>EXTR</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>EXTORTION</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>CBWRFR</td>
+            <td>Opala negra</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>CYBER-WARFARE</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>VBA</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>VBS</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>PTAT</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>ALA</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>CAPT</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>CAPTCHAS</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>OIDC</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>NRWFWLL</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+        <tr>
+
+            <td>NETWORK-FIREWALL</td>
+            <td>Taaffeite</td>
+            <td>DOKK ONLY</td>
+
+        </tr>
+
+    </table>
+
+    <style>
+
+        td {
+
+            padding: 5px;
+
+        } 
+
+        
+
+    </style>
+
+    
+    <script src="home.js"></script>
+</body>
+</html>
