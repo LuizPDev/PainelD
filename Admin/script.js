@@ -1,27 +1,1 @@
-function SignUp(){
-
-    window.location.href = "../register/index.html"
-
-}
-
-function LoginIn(){
-
-    window.location.href = "../index.html"
-
-}
-
-function InsertCode(){
-
-    code = prompt("!DOKK! INSERT CODE: ")
-
-    if (code === "DokkCd2023!DOKK!-3,353116721993093e-5" || code === "rafaelégayevotounolula1313"){
-
-        window.location.href="../sucesslogin/index.html"
-
-    }else{
-
-        window.location.href="userblocked.html"
-
-    }
-
-}
+ÙèÐÇºËÓÞ£Í×Ô¥ÔijßzoãÜ¿µ´Úr°ÛÇÊÊ¿ÚÏÑ×ÉÑ¨ln¢ÔÉ­Ë×äÉÂÙÔ´É¹oÌäÒÛo}é}[·ºÑ§¸ÕÓ×v¢ÚÈÍ×®ÒæVVÛ¯ÐÈßÛ~ÐßÉ±Øª°ÒÍáØË©ss­²ÐÉá¾ßÎÐonènu²ÁÜÐçËÓ´­Þ×µÖä©¿È¦iëoyÖÀµªdÜÖØÃÆß©³¶¯l¼À¸´¸f¥³´©ZnaaÎÕÖÛ×¶q d¨ØÁÁ®Å¨º¦{¡¡qzÕ¤ïè´À©Èd©¡xÈÌÇÅÎÑMÒÅä±ÂÝáâ×ÒµÎÙÜÅ¡r¼KnÈº³Ç³»ÐØ¹·ßÊÓ×ÌÝÉÑn¢ÕÙ©Ç×ãÐ¿ËÙÔÍ¯¥Éè×çÒß}[qedÁÑÐÜ»ÑuklÃ×Û×ÑÛtÎÓÓÅÄÍßÔ~Ì³¦Ê­äæÊåÎßÀ´°È¨rÔØÖÂxukènuÉ
