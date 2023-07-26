@@ -1,10 +1,9 @@
-_ = function
-__ = document
-___ = getElementById
-____ = if
-_____ = else
+let __ = document
+let ___ = getElementById
+let ____ = if
+let _____ = else
 
-_ ShowPasswordLogin(){
+function ShowPasswordLogin(){
     const PasswordLogin = __.___("password");
     const icon = __.___("icon");
 
@@ -22,7 +21,7 @@ _ ShowPasswordLogin(){
 
 }
 
-_ ShowPasswordRegister(){
+function ShowPasswordRegister(){
     const PasswordRegister = __.___("password");
     const icon = __.___("icon");
 
@@ -40,7 +39,7 @@ _ ShowPasswordRegister(){
 
 }
 
-_ register(){
+function register(){
 
     const email = __.___("email").value;
     const username = __.___("username").value;
@@ -71,7 +70,7 @@ _ register(){
 
 }
 
-_ login(){
+function login(){
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
     const username = localStorage.getItem("username")
@@ -87,7 +86,7 @@ _ login(){
 
 }
 
-_ Admin(){
+function Admin(){
 
     alert("ATENÇÃO!! Você está sendo redirecionado a uma pagina restrita para COO / CEO.\n\nATTENTION!! You are being directed to a COO / CEO restricted page.\n\n¡¡ATENCIÓN!! Está siendo dirigido a una página restringida de COO/CEO.\n\nATTENTION!! Vous êtes dirigé vers une page restreinte COO / CEO.\n\n注意力！！您將被引導至 COO / CEO 受限頁面。")
 
@@ -95,7 +94,7 @@ _ Admin(){
 
 }
 
-_ AdminRegister(){
+function AdminRegister(){
 
     alert("ATENÇÃO!! Você está sendo redirecionado a uma pagina restrita para COO / CEO.\n\nATTENTION!! You are being directed to a COO / CEO restricted page.\n\n¡¡ATENCIÓN!! Está siendo dirigido a una página restringida de COO/CEO.\n\nATTENTION!! Vous êtes dirigé vers une page restreinte COO / CEO.\n\n注意力！！您將被引導至 COO / CEO 受限頁面。")
 
