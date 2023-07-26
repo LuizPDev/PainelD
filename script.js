@@ -85,7 +85,7 @@ function Admin(){
 
     alert("ATENÇÃO!! Você está sendo redirecionado a uma pagina restrita para COO / CEO.\n\nATTENTION!! You are being directed to a COO / CEO restricted page.\n\n¡¡ATENCIÓN!! Está siendo dirigido a una página restringida de COO/CEO.\n\nATTENTION!! Vous êtes dirigé vers une page restreinte COO / CEO.\n\n注意力！！您將被引導至 COO / CEO 受限頁面。")
 
-    window.location.href = "admin/index.html"
+    window.location.href = "Admin/index.html"
 
 }
 
@@ -93,6 +93,6 @@ function AdminRegister(){
 
     alert("ATENÇÃO!! Você está sendo redirecionado a uma pagina restrita para COO / CEO.\n\nATTENTION!! You are being directed to a COO / CEO restricted page.\n\n¡¡ATENCIÓN!! Está siendo dirigido a una página restringida de COO/CEO.\n\nATTENTION!! Vous êtes dirigé vers une page restreinte COO / CEO.\n\n注意力！！您將被引導至 COO / CEO 受限頁面。")
 
-    window.location.href = "../admin/index.html"
+    window.location.href = "../Admin/index.html"
 
 }
