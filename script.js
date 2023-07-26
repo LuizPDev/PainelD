@@ -76,7 +76,7 @@ function login(){
     const passwordget = __.getElementById("password").value;
     
     if(emailget == email || emailget == username && passwordget == password){
-        window.location.href = "sucesslogin/home.html"
+        window.location.href = "sucesslogin/index.html"
     }else{
         __.getElementById("invalid").innerHTML="Usúario ou senha inválido.";
     }
