@@ -56,7 +56,7 @@ function register(){
         
         alert("Cadastro efetuado com sucesso.")
 
-        window.location.href = "../main.html"
+        window.location.href = "../index.html"
 
 
     }else{
