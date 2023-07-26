@@ -1,18 +1,16 @@
 let __ = document
 let ___ = getElementById
-let ____ = if
-let _____ = else
 
 function ShowPasswordLogin(){
     const PasswordLogin = __.___("password");
     const icon = __.___("icon");
 
-    ____ (PasswordLogin.type == "password"){
+    if (PasswordLogin.type == "password"){
 
         PasswordLogin.setAttribute("type","text");
         icon.classList.add("close")
 
-    }_____{
+    }else{
 
         PasswordLogin.setAttribute("type","password");
         icon.classList.remove("close")
@@ -25,12 +23,12 @@ function ShowPasswordRegister(){
     const PasswordRegister = __.___("password");
     const icon = __.___("icon");
 
-    ____ (PasswordRegister.type == "password"){
+    if (PasswordRegister.type == "password"){
 
         PasswordRegister.setAttribute("type","text");
         icon.classList.add("close")
 
-    }_____{
+    }else{
 
         PasswordRegister.setAttribute("type","password");
         icon.classList.remove("close")
@@ -48,13 +46,13 @@ function register(){
     const usuario = __.___("email").value.substring(0, __.___("email").value.indexOf("@"));
     const dominio = __.___("email").value.substring(__.___("email").value.indexOf("@")+ 1, __.___("email").value.length);
 
-    ____(password.length < 6){
+    if(password.length < 6){
         __.___("invalid").innerHTML="A senha precisa ter pelo menos 6 (seis) caracteres.";
-    }_____ ____(password == username){
+    }else if(password == username){
         __.___("invalid").innerHTML="A senha não pode ser igual ao nome de usúario.";
-    }_____ ____(username.length < 4){
+    }else if(username.length < 4){
         __.___("invalid").innerHTML="O nome de usuário precisa ter pelo menos 4 (quatro) caracteres.";
-    }_____ ____(usuario.length >=1 && dominio.length >=3 && usuario.search("@")==-1 && dominio.search("@")==-1 && usuario.search(" ")==-1 && dominio.search(" ")==-1 && dominio.search(".")!=-1 && dominio.indexOf(".") >=1 && dominio.lastIndexOf(".") < dominio.length - 1){
+    }else if(usuario.length >=1 && dominio.length >=3 && usuario.search("@")==-1 && dominio.search("@")==-1 && usuario.search(" ")==-1 && dominio.search(" ")==-1 && dominio.search(".")!=-1 && dominio.indexOf(".") >=1 && dominio.lastIndexOf(".") < dominio.length - 1){
         const setemail = localStorage.setItem("email", __.___("email").value);
         const setpassword = localStorage.setItem("password", __.___("password").value);
         const setusername = localStorage.setItem("username", __.___("username").value);
@@ -64,7 +62,7 @@ function register(){
         window.location.href = "../index.html"
 
 
-    }_____{
+    }else{
         __.___("invalid").innerHTML="Email inválido. O email deve conter (@ e .).";
     }
 
@@ -78,9 +76,9 @@ function login(){
     const emailget = __.___("email").value;
     const passwordget = __.___("password").value;
     
-    ____(emailget == email || emailget == username && passwordget == password){
+    if(emailget == email || emailget == username && passwordget == password){
         window.location.href = "sucesslogin/home.html"
-    }_____{
+    }else{
         __.___("invalid").innerHTML="Usúario ou senha inválido.";
     }
 
